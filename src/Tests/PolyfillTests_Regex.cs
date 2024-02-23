@@ -26,6 +26,13 @@ partial class PolyfillTests
         Assert.IsTrue(found);
     }
 
+    [GeneratedRegex("abc|def")]
+    private static partial Regex GeneratedRegex();
+
+    [Test]
+    public void GeneratedRegexTest() =>
+        Assert.True(GeneratedRegex().IsMatch("abc"));
+
     [Test]
     public void EnumerateMatchesStatic()
     {
