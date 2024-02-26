@@ -312,6 +312,9 @@
 
 #### StringPolyfill
 
+ * `String Create(IFormatProvider, Runtime.CompilerServices.DefaultInterpolatedStringHandler&)` [reference](https://learn.microsoft.com/en-us/dotnet/api/system.string.create?view=net-8.0#system-string-create(system-iformatprovider-system-runtime-compilerservices-defaultinterpolatedstringhandler@))
+ * `String Create(IFormatProvider, Span<Char>, Runtime.CompilerServices.DefaultInterpolatedStringHandler&)` [reference](https://learn.microsoft.com/en-us/dotnet/api/system.string.create?view=net-8.0#system-string-create(system-iformatprovider-system-runtime-compilerservices-defaultinterpolatedstringhandler@))
+ * `String Create<TState>(Int32, TState, Buffers.SpanAction<Char,TState>)` [reference](https://learn.microsoft.com/en-us/dotnet/api/system.string.create?view=net-8.0#system-string-create(system-iformatprovider-system-runtime-compilerservices-defaultinterpolatedstringhandler@))
  * `String Join(Char, String[])` [reference](https://learn.microsoft.com/en-us/dotnet/api/system.string.join#system-string-join(system-char-system-string()))
  * `String Join(Char, Object[])` [reference](https://learn.microsoft.com/en-us/dotnet/api/system.string.join#system-string-join(system-char-system-object()))
  * `String Join(Char, String[], Int32, Int32)` [reference](https://learn.microsoft.com/en-us/dotnet/api/system.string.join#system-string-join(system-char-system-string()-system-int32-system-int32))
