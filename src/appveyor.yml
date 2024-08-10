@@ -8,20 +8,7 @@ environment:
   DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
 build_script:
 # https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-install-script
-- pwsh: |
-    if ($isWindows) {
-      Invoke-WebRequest "https://dotnet.microsoft.com/download/dotnet/scripts/v1/dotnet-install.ps1" -OutFile "./dotnet-install.ps1" -TimeoutSec 120
-      ./dotnet-install.ps1 -JSonFile src/global.json -Architecture x64 -InstallDir 'C:\Program Files\dotnet'
-    }
-    else {
-      Invoke-WebRequest "https://dotnet.microsoft.com/download/dotnet/scripts/v1/dotnet-install.sh" -OutFile "./dotnet-install.sh" -TimeoutSec 120
-      sudo chmod u+x dotnet-install.sh
-      if ($isMacOS) {
-        sudo ./dotnet-install.sh --jsonfile src/global.json --architecture x64 --install-dir '/usr/local/share/dotnet'
-      } else {
-        sudo ./dotnet-install.sh --jsonfile src/global.json --architecture x64 --install-dir '/usr/share/dotnet'
-      }
-    }
+- winget install Microsoft.DotNet.SDK.9
 - dotnet build src --configuration Release --verbosity quiet
 - dotnet test src --configuration Release --no-build --no-restore
 
