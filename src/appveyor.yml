@@ -7,7 +7,7 @@ environment:
   DOTNET_CLI_TELEMETRY_OPTOUT: true
   DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
 build_script:
-- choco install dotnet --pre
+- choco install dotnet-sdk --pre
 - dotnet build src --configuration Release --verbosity quiet
 - dotnet test src --configuration Release --no-build --no-restore
 
