@@ -8,7 +8,7 @@ environment:
   DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
 build_script:
 # https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-install-script
-- winget install Microsoft.DotNet.SDK.9
+- winget install --id=Microsoft.DotNet.SDK.Preview  -e
 - dotnet build src --configuration Release --verbosity quiet
 - dotnet test src --configuration Release --no-build --no-restore
 
