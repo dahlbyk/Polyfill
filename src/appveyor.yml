@@ -7,8 +7,7 @@ environment:
   DOTNET_CLI_TELEMETRY_OPTOUT: true
   DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
 build_script:
-# https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-install-script
-- winget install --id=Microsoft.DotNet.SDK.Preview  -e
+- choco install dotnet --pre
 - dotnet build src --configuration Release --verbosity quiet
 - dotnet test src --configuration Release --no-build --no-restore
 
