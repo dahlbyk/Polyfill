@@ -316,6 +316,12 @@ public class OverloadResolutionPriorityAttributeTests
 <!-- endSnippet -->
 
 
+## InlineArrayAttribute
+
+ * [Reference](https://learn.microsoft.com/en-us/dotnet/api/system.runtime.compilerservices.inlinearrayattribute?view=net-8.0)
+ * Enables [Inline Arrays](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-12.0/inline-arrays)
+
+
 ### UnscopedRefAttribute
 
  * [UnscopedRefAttribute](https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.codeanalysis.unscopedrefattribute)
