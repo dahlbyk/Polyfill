@@ -318,7 +318,7 @@ public class OverloadResolutionPriorityAttributeTests
 
 ## InlineArrayAttribute
 
- * [Reference](https://learn.microsoft.com/en-us/dotnet/api/system.runtime.compilerservices.inlinearrayattribute?view=net-8.0)
+ * [Reference](https://learn.microsoft.com/en-us/dotnet/api/system.runtime.compilerservices.inlinearrayattribute)
  * Enables [Inline Arrays](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-12.0/inline-arrays)
 
 

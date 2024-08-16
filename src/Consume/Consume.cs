@@ -496,11 +496,6 @@ class Consume
         random.Shuffle(span);
     }
 #endif
-    [System.Runtime.CompilerServices.InlineArray(10)]
-    public struct Buffer
-    {
-        private object _element0;
-    }
     void RandomShuffle()
     {
         var random = new Random();
@@ -529,4 +524,10 @@ class Consume
     public void Method(object x)
     {
     }
+}
+
+[System.Runtime.CompilerServices.InlineArray(10)]
+public struct Buffer
+{
+    private object _element0;
 }
